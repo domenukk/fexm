@@ -38,9 +38,6 @@ def crawl(args: argparse.Namespace):
 
 
 def init(args: argparse.Namespace):
-    def fixme():
-        raise NotImplemented("Fix me! :)")
-
     initer = {
         "pacmanfuzzer": pacmanfuzzer_setup.init,
         "aptfuzzer": aptfuzzer_setup.init,

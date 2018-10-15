@@ -441,8 +441,8 @@ class Overmind(object):
             try:
                 self.analyze_packet(ts, buf)
             except Exception as e:
-                logger.error("Exception while parsing. {}".format(e))
-                traceback.print_exc()
+                logger.info("Ignored exception while parsing a TCP packet. {}".format(e))
+                # traceback.print_exc()
 
         # pcapreader.__f.close()
 
